@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agentku</title>
+<!-- css -->
+    <link rel="stylesheet" href="css/index.css">
+<!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<!-- font awsome -->
+    <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+<!-- header -->
+    <header style="border-bottom: 1px solid black;">
+        <navbar class="container">
+            <div class="navbar">
+                <img class="logo" src="assets/revou.svg" alt="">
+                <div class="menu">
+                    <a class="menu-item" href="#home">Home</a>
+                    <a class="menu-item" href="#package">Our Package</a>
+                    <a class="menu-item" href="#call">Call Us</a>
+                </div>
+            </div>
+        </navbar>
+
+    </header>
+
+<!-- main -->
+    <main>
+<!-- section home -->
+        <section id="home">
+            <div class="container">
+                <div class="home-tittle">
+                    <h1>Your Trusted Travel Agent's</h1>
+                    <p>Your happiness is our  happiness</p>
+                </div>
+            </div>
+        </section>
+        <section id="about-contact">
+            <div class="container">
+                <div class="about-contact">
+<!-- about -->
+                    <div class="about">
+                        <!-- carouwsel -->
+                        <div class="carousel">
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                            <!-- isi -->
+                            <div class="isi">
+                                <img class="about-img" src="https://placekitten.com/500/500" alt="">
+                                <div class="about-content">
+                                    <div class="content-caption">
+                                        <p><i>"Liburan jadi menyenangkan bersama Travel Agentku."</i></p>
+                                    </div>
+                                    <div class="content-person">
+                                        <img src="https://placekitten.com/50/50" alt="">
+                                        <div class="person-info">
+                                            <h6>Florence Hughes</h6>
+                                            <p>Ibu Rumah Tangga, 28</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="isi">
+                                <img class="about-img" src="https://placedog.net/500/500" alt="">
+                                <div class="about-content">
+                                    <div class="content-caption">
+                                        <p><i>"Lorem ipsum dolor sit"</i></p>
+                                    </div>
+                                    <div class="content-person">
+                                        <img src="https://placedog.net/50/50" alt="">
+                                        <div class="person-info">
+                                            <h6>zhongli</h6>
+                                            <p>Ibu Rumah Tangga, 28</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <hr class="border"/>
+                        <div class="about-information">
+                            <h6 class="information-tittle">
+                                Use this space to provide users with more information about your offer. Consider it a follow-up to your headline and explain the benefits of your service or product.
+                            </h6>
+                            <ul class="information-list">
+                                <li>
+                                    <div class="list-number">1</div>
+                                    <p class="list-paragraf">Lorem ipsum.</p>
+                                </li>
+                                <li>
+                                    <div class="list-number">2</div>
+                                    <p class="list-paragraf">Lorem ipsum.</p>
+                                </li>
+                                <li>
+                                    <div class="list-number">3</div>
+                                    <p class="list-paragraf">Lorem ipsum.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="contact" id="call">
+                        <div class="contact-card">
+                            <div class="card-title">
+                                <h4>Contact Us</h4>
+                                <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima.</p>
+                            </div>
+                            <form name="form-contact" onsubmit="return validateForm()">
+                               <div  class="input">
+                                    <label for="">Your Name:</label>
+                                    <input class="input-box" type="text" name="name" required placeholder="First and last name">
+                               </div>
+                                <div  class="input">
+                                    <label for="">Email Address:</label>
+                                    <input class="input-box" type="email" name="email" required placeholder="example@email.com">
+                                </div>
+                                <div  class="input">
+                                <label for="">What are you interested in?</label>
+                                <select class="input-box" name="destination" id="">
+                                    <option value="">Select Option</option>
+                                    <option value="">Domestik</option>
+                                    <option vqlue="">Luar Negri</option>
+                                </select>
+                                </div>
+                                <input type="submit" class="submit-button" value="Send" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- section package -->
+        <section id="package-title">
+            <div class="container">
+                <div class="package-title">
+                    <h1 class="package-title-text">Our Package</h1>
+                </div>
+            </div>          
+        </section>
+        <section>
+            <div class="package">
+                <div class="container">
+                    <div class="package-list">
+                        <div class="package-card-list">
+                            <div class="package-card-list-item">
+                                <div class="package-card-list-item-icon">
+                                    <!-- <i class="fa-regular fa-lightbulb"></i> -->
+                                    <img src="assets/lightbulb-regular.svg" alt="lightbulb-regular">
+                                </div>
+                                <div class="package-card-list-item-description">
+                                    <p class="text-title-bold-l">Bali</p>
+                                    <p class="text-description-l">Travel dan wisata di Bali. kunjungi cagar budaya
+                                        dan kuliner yang menarik</p>
+                                </div>
+                            </div>
+                            <div class="package-card-list-item">
+                                <div class="package-card-list-item-icon">
+                                    <!-- <i class="fa-regular fa-lightbulb"></i> -->
+                                    <img src="assets/lightbulb-regular.svg" alt="lightbulb-regular">
+                                </div>
+                                <div class="package-card-list-item-description">
+                                    <p class="text-title-bold-l">Japan</p>
+                                    <p class="text-description-l">Travel dan wisata di Japan. kunjungi cagar budaya
+                                        dan kuliner yang menarik</p>
+                                </div>
+                            </div>
+                            <div class="package-card-list-item">
+                                <div class="package-card-list-item-icon">
+                                    <!-- <i class="fa-regular fa-lightbulb"></i> -->
+                                    <img src="assets/lightbulb-regular.svg" alt="lightbulb-regular">
+                                </div>
+                                <div class="package-card-list-item-description">
+                                    <p class="text-title-bold-l">Singapore</p>
+                                    <p class="text-description-l">Travel dan wisata di Singapore. kunjungi cagar budaya
+                                        dan kuliner yang menarik</p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="border"/>
+                        <div class="package-list">
+                            <div class="package-card-list">
+                                <div class="package-card-list-item">
+                                    <div class="package-card-list-item-icon">
+                                        <!-- <i class="fa-regular fa-lightbulb"></i> -->
+                                        <img src="assets/lightbulb-regular.svg" alt="lightbulb-regular">
+                                    </div>
+                                    <div class="package-card-list-item-description">
+                                        <p class="text-title-bold-l">Bali</p>
+                                        <p class="text-description-l">Travel dan wisata di Bali. kunjungi cagar budaya
+                                            dan kuliner yang menarik</p>
+                                    </div>
+                                </div>
+                                <div class="package-card-list-item">
+                                    <div class="package-card-list-item-icon">
+                                        <!-- <i class="fa-regular fa-lightbulb"></i> -->
+                                        <img src="assets/lightbulb-regular.svg" alt="lightbulb-regular">
+                                    </div>
+                                    <div class="package-card-list-item-description">
+                                        <p class="text-title-bold-l">Japan</p>
+                                        <p class="text-description-l">Travel dan wisata di Japan. kunjungi cagar budaya
+                                            dan kuliner yang menarik</p>
+                                    </div>
+                                </div>
+                                <div class="package-card-list-item">
+                                    <div class="package-card-list-item-icon">
+                                        <!-- <i class="fa-regular fa-lightbulb"></i> -->
+                                        <img src="assets/lightbulb-regular.svg" alt="lightbulb-regular">
+                                    </div>
+                                    <div class="package-card-list-item-description">
+                                        <p class="text-title-bold-l">Singapore</p>
+                                        <p class="text-description-l">Travel dan wisata di Singapore. kunjungi cagar budaya
+                                            dan kuliner yang menarik</p>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<!-- footer -->
+    <footer>
+        <div class="footer">
+            &copy; 2023 Copyright by Muhammad Refhaldo
+        </div>
+    </footer>
+
+<!-- java st -->
+    <script src="js/index.js" type="text/javascript"></script>
+</body>
+</html>
